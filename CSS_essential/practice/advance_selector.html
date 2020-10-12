@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS selector </title>
+
+
+    <style>
+    body {
+            background:whitesmoke;
+            font-size: 20px;
+            font-weight: 600px;
+            font-style: bold;
+        }
+
+        section p { color:red } /* it will select all the 'p' element inside the sections  */
+
+        section > p { color:teal} /* ii will select 'p' element that are child of sections */
+
+        h1 + p { color: rgb(200, 236, 39); } /* it will select next 'p' of 'h1' */
+
+        h1 ~ p { color: chocolate} /* it will select all p after h1 */
+    </style>
+
+</head>
+<body>
+    
+    <section>
+        <p>Chid of section</p>
+        <div>
+            <p>Descendent of section</p>
+        </div>
+        <p>Sibling to heading</p>
+        <h1>heading</h1>
+        <p>Sibling to heading (right after)</p>
+        <p>Sibling to heading</p>
+    </section>
+</body>
+</html>
